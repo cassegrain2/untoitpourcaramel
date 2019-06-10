@@ -32,7 +32,7 @@ def search(parameters):
     data = request.json()
 
     for ad in data['items']:
-
+#TODO enlever create_or_get
         annonce, created = Annonce.create_or_get(
             id='logic-immo-' + ad['identifiers']['main'],
             site="Logic Immo",
